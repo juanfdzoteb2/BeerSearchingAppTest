@@ -43,7 +43,7 @@ class BeerSearchingAppTests: XCTestCase {
             }
 
         }
-        waitForExpectations(timeout: 2, handler: nil)
+        waitForExpectations(timeout: 4, handler: nil)
 
     }
 
