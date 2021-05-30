@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		8701BA6D266258F500486388 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8701BA6C266258F500486388 /* Alamofire */; };
 		8701BA712662596400486388 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA702662596400486388 /* NetworkingProvider.swift */; };
-		8701BA7526625A0D00486388 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7426625A0D00486388 /* Beer.swift */; };
 		8701BA7A26627FBB00486388 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7826627FBB00486388 /* BeerTableViewCell.swift */; };
 		8701BA7B26627FBB00486388 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7826627FBB00486388 /* BeerTableViewCell.swift */; };
 		8701BA7C26627FBB00486388 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7826627FBB00486388 /* BeerTableViewCell.swift */; };
@@ -26,6 +25,9 @@
 		8701BA922663AB1B00486388 /* SharedPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA912663AB1B00486388 /* SharedPreferences.swift */; };
 		8701BA932663AB1B00486388 /* SharedPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA912663AB1B00486388 /* SharedPreferences.swift */; };
 		8701BA942663AB1B00486388 /* SharedPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA912663AB1B00486388 /* SharedPreferences.swift */; };
+		873C5C992664055F000F6B6E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C5C982664055F000F6B6E /* Beer.swift */; };
+		873C5C9A2664055F000F6B6E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C5C982664055F000F6B6E /* Beer.swift */; };
+		873C5C9B2664055F000F6B6E /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 873C5C982664055F000F6B6E /* Beer.swift */; };
 		8779F20F26624ECA002A3A7F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779F20E26624ECA002A3A7F /* AppDelegate.swift */; };
 		8779F21126624ECA002A3A7F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779F21026624ECA002A3A7F /* SceneDelegate.swift */; };
 		8779F21326624ECA002A3A7F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8779F21226624ECA002A3A7F /* ViewController.swift */; };
@@ -55,13 +57,13 @@
 
 /* Begin PBXFileReference section */
 		8701BA702662596400486388 /* NetworkingProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingProvider.swift; sourceTree = "<group>"; };
-		8701BA7426625A0D00486388 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		8701BA7826627FBB00486388 /* BeerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerTableViewCell.swift; sourceTree = "<group>"; };
 		8701BA7926627FBB00486388 /* BeerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerTableViewCell.xib; sourceTree = "<group>"; };
 		8701BA8026629AF400486388 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		8701BA8B2663960900486388 /* EmpyStateTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmpyStateTableView.swift; sourceTree = "<group>"; };
 		8701BA8D2663A7A000486388 /* ConfigureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigureViewController.swift; sourceTree = "<group>"; };
 		8701BA912663AB1B00486388 /* SharedPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedPreferences.swift; sourceTree = "<group>"; };
+		873C5C982664055F000F6B6E /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
 		8779F20B26624ECA002A3A7F /* BeerSearchingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeerSearchingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8779F20E26624ECA002A3A7F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8779F21026624ECA002A3A7F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -116,7 +118,7 @@
 		8701BA73266259E700486388 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8701BA7426625A0D00486388 /* Beer.swift */,
+				873C5C982664055F000F6B6E /* Beer.swift */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -324,9 +326,9 @@
 				8701BA7A26627FBB00486388 /* BeerTableViewCell.swift in Sources */,
 				8701BA8C2663960A00486388 /* EmpyStateTableView.swift in Sources */,
 				8779F20F26624ECA002A3A7F /* AppDelegate.swift in Sources */,
-				8701BA7526625A0D00486388 /* Beer.swift in Sources */,
 				8701BA8E2663A7A000486388 /* ConfigureViewController.swift in Sources */,
 				8701BA712662596400486388 /* NetworkingProvider.swift in Sources */,
+				873C5C992664055F000F6B6E /* Beer.swift in Sources */,
 				8779F21126624ECA002A3A7F /* SceneDelegate.swift in Sources */,
 				8701BA8126629AF400486388 /* DetailViewController.swift in Sources */,
 			);
@@ -337,6 +339,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8701BA8226629AF400486388 /* DetailViewController.swift in Sources */,
+				873C5C9A2664055F000F6B6E /* Beer.swift in Sources */,
 				8701BA932663AB1B00486388 /* SharedPreferences.swift in Sources */,
 				8701BA8F2663A7A000486388 /* ConfigureViewController.swift in Sources */,
 				8779F22626624ECB002A3A7F /* BeerSearchingAppTests.swift in Sources */,
@@ -349,6 +352,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8701BA8326629AF400486388 /* DetailViewController.swift in Sources */,
+				873C5C9B2664055F000F6B6E /* Beer.swift in Sources */,
 				8701BA942663AB1B00486388 /* SharedPreferences.swift in Sources */,
 				8701BA902663A7A000486388 /* ConfigureViewController.swift in Sources */,
 				8779F23126624ECB002A3A7F /* BeerSearchingAppUITests.swift in Sources */,

@@ -11,18 +11,42 @@ import XCTest
 class BeerSearchingAppTests: XCTestCase {
 
 
-    func testExample() throws {
-        var beer: Beer
+
+    func testNetworkProviderResturnNilOnEmptyString() throws {
+        
+
         NetworkingProvider.shared.getBeerByName(name: "") { value in
             XCTAssertNil(value)
         }
+        
+    }
+    func testNetworkProviderReturnValidList() throws {
+        
+        let expectationFoodChicken = expectation(description: "wait_for_beer_chicken")
+        NetworkingProvider.shared.getBeerByName(name: "chicken") { value in
+            XCTAssertNotNil(value)
+            expectationFoodChicken.fulfill()
+
+        }
+        waitForExpectations(timeout: 2, handler: nil)
+
+    }
+    
+    func testNetworkProviderReturnSameOutput() throws {
+        
+        let expectationFoodChicken = expectation(description: "wait_for_beer_chicken")
+        NetworkingProvider.shared.getBeerByName(name: "chicken") { value1 in
+            NetworkingProvider.shared.getBeerByName(name: "chicken") { value2 in
+                XCTAssertEqual(value1,value2)
+                expectationFoodChicken.fulfill()
+
+            }
+
+        }
+        waitForExpectations(timeout: 2, handler: nil)
+
     }
 
-    func testPerformanceExample() throws {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
-    }
+
 
 }

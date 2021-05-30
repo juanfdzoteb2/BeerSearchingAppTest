@@ -18,7 +18,7 @@ final class NetworkingProvider{
     
     func getBeerByName(name :String,completion: @escaping(Array<Beer>?) -> () ){
         
-   
+
         if(name == ""){
             completion(nil)
             return
@@ -28,8 +28,10 @@ final class NetworkingProvider{
         let name = name.replacingOccurrences(of: " ", with: "_")
         var url = "\(base_url)beers?food=\(name)"
         
+        //Check if the filter is active
         let isFilterBitternessActive = SharedPreferences.shared.readFilterBitternessBool()
         
+        //If is active add the filter to url get 
         if(isFilterBitternessActive){
             let bitternessValue = SharedPreferences.shared.readBitternessValue()
             url += "&\(ibu_param)\(bitternessValue)"

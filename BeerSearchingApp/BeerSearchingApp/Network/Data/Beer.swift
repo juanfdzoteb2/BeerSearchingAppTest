@@ -8,7 +8,7 @@
 import Foundation
 
 
-struct Beer: Decodable {
+struct Beer: Decodable,Equatable {
     let id: Int?
     let name: String?
     let tagline: String?

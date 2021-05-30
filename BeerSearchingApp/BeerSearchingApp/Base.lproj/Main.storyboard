@@ -17,9 +17,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="jlm-ra-csq">
+                            <searchBar contentMode="redraw" restorationIdentifier="searchBar" translatesAutoresizingMaskIntoConstraints="NO" id="jlm-ra-csq">
                                 <rect key="frame" x="0.0" y="64" width="342" height="40"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="accessibilityIdentifier" value="searchBar"/>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="hfE-1d-bYr"/>
                                 </connections>
@@ -201,6 +204,7 @@
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mkr-jA-zhW">
                                 <rect key="frame" x="173" y="32" width="225" height="26.5"/>
+                                <accessibility key="accessibilityConfiguration" identifier="titleDetail" label="titleDetail"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
