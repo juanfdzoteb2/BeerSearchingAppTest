@@ -1,6 +1,6 @@
 # BeerSearchingAppTest
 
-This is an aplicaction for a Technical Test iOS MO2O
+This is an application for a Technical Test iOS MO2O
 
 
 ## Authors
