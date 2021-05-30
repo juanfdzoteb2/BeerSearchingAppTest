@@ -10,8 +10,6 @@
 		8701BA6D266258F500486388 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 8701BA6C266258F500486388 /* Alamofire */; };
 		8701BA712662596400486388 /* NetworkingProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA702662596400486388 /* NetworkingProvider.swift */; };
 		8701BA7A26627FBB00486388 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7826627FBB00486388 /* BeerTableViewCell.swift */; };
-		8701BA7B26627FBB00486388 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7826627FBB00486388 /* BeerTableViewCell.swift */; };
-		8701BA7C26627FBB00486388 /* BeerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8701BA7826627FBB00486388 /* BeerTableViewCell.swift */; };
 		8701BA7D26627FBB00486388 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701BA7926627FBB00486388 /* BeerTableViewCell.xib */; };
 		8701BA7E26627FBB00486388 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701BA7926627FBB00486388 /* BeerTableViewCell.xib */; };
 		8701BA7F26627FBB00486388 /* BeerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8701BA7926627FBB00486388 /* BeerTableViewCell.xib */; };
@@ -123,6 +121,30 @@
 			path = Data;
 			sourceTree = "<group>";
 		};
+		873C5C9C26641CFE000F6B6E /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				8701BA912663AB1B00486388 /* SharedPreferences.swift */,
+			);
+			path = Preferences;
+			sourceTree = "<group>";
+		};
+		873C5C9D26641D16000F6B6E /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				8701BA8D2663A7A000486388 /* ConfigureViewController.swift */,
+				8779F20E26624ECA002A3A7F /* AppDelegate.swift */,
+				8779F21026624ECA002A3A7F /* SceneDelegate.swift */,
+				8779F21226624ECA002A3A7F /* ViewController.swift */,
+				8701BA8B2663960900486388 /* EmpyStateTableView.swift */,
+				8779F21426624ECA002A3A7F /* Main.storyboard */,
+				8701BA7826627FBB00486388 /* BeerTableViewCell.swift */,
+				8701BA7926627FBB00486388 /* BeerTableViewCell.xib */,
+				8701BA8026629AF400486388 /* DetailViewController.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
 		8779F20226624ECA002A3A7F = {
 			isa = PBXGroup;
 			children = (
@@ -146,20 +168,12 @@
 		8779F20D26624ECA002A3A7F /* BeerSearchingApp */ = {
 			isa = PBXGroup;
 			children = (
+				873C5C9D26641D16000F6B6E /* UI */,
+				873C5C9C26641CFE000F6B6E /* Preferences */,
 				8701BA72266259D700486388 /* Network */,
-				8779F20E26624ECA002A3A7F /* AppDelegate.swift */,
-				8779F21026624ECA002A3A7F /* SceneDelegate.swift */,
-				8779F21226624ECA002A3A7F /* ViewController.swift */,
-				8701BA8B2663960900486388 /* EmpyStateTableView.swift */,
-				8779F21426624ECA002A3A7F /* Main.storyboard */,
 				8779F21726624ECB002A3A7F /* Assets.xcassets */,
 				8779F21926624ECB002A3A7F /* LaunchScreen.storyboard */,
 				8779F21C26624ECB002A3A7F /* Info.plist */,
-				8701BA7826627FBB00486388 /* BeerTableViewCell.swift */,
-				8701BA7926627FBB00486388 /* BeerTableViewCell.xib */,
-				8701BA8026629AF400486388 /* DetailViewController.swift */,
-				8701BA8D2663A7A000486388 /* ConfigureViewController.swift */,
-				8701BA912663AB1B00486388 /* SharedPreferences.swift */,
 			);
 			path = BeerSearchingApp;
 			sourceTree = "<group>";
@@ -343,7 +357,6 @@
 				8701BA932663AB1B00486388 /* SharedPreferences.swift in Sources */,
 				8701BA8F2663A7A000486388 /* ConfigureViewController.swift in Sources */,
 				8779F22626624ECB002A3A7F /* BeerSearchingAppTests.swift in Sources */,
-				8701BA7B26627FBB00486388 /* BeerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,7 +369,6 @@
 				8701BA942663AB1B00486388 /* SharedPreferences.swift in Sources */,
 				8701BA902663A7A000486388 /* ConfigureViewController.swift in Sources */,
 				8779F23126624ECB002A3A7F /* BeerSearchingAppUITests.swift in Sources */,
-				8701BA7C26627FBB00486388 /* BeerTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
